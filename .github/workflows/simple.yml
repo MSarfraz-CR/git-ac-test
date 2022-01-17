@@ -18,3 +18,12 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: "Try powershell"
+        run: Get-Location
+      - name: "Use Bash shell on windows"
+        run: pwd
+        shell: bash
