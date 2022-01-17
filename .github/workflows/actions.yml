@@ -7,11 +7,11 @@ on:
       - 'feature/*' # matches feature/A but not features/A/B
       - 'feature/**' # Matches feature/A/B
       - '!feature/featC' # Put after patterns and the workflow won't trigger for that branch
-    tags:
-      - v1.*
-    paths:
-      - '**.js'
-      - '!filename.js'
+    # tags:
+    #   - v1.*
+    # paths:
+    #   - '**.js'
+    #   - '!filename.js'
   # schedule:
     # - cron: "0/5 * * * *"
     # - cron: "0/6 * * * *"
